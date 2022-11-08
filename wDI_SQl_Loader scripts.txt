@@ -1,0 +1,40 @@
+load sript :
+
+sqlldr user_name/password@servername:port/SID  
+DATA=/WDI_Data.csv
+CONTROL=/WDI_Data.ctl 
+LOG=/WDI_Data.log   
+BAD=/WDI_Data.bad &
+
+-----------------------------------------------------------------------------------------------------
+sqlldr user_name/password@servername:port/SID  
+DATA=/wdi_country.csv
+CONTROL=/wdi_country.ctl 
+LOG=/wdi_country.log   
+BAD=/wdi_country.bad &
+-----------------------------------------------------------------------------------------------------
+sqlldr user_name/password@servername:port/SID  
+DATA=/WDI_Country_serious.csv
+CONTROL=/WDI_Country_serious.ctl 
+LOG=/WDI_Country_serious.log   
+BAD=/WDI_Country_serious.bad &
+-----------------------------------------------------------------------------------------------------
+sqlldr user_name/password@servername:port/SID  
+DATA=/WDI_foot_note.csv
+CONTROL=/WDI_foot_note.ctl 
+LOG=/WDI_foot_note.log   
+BAD=/WDI_foot_note.bad &
+-----------------------------------------------------------------------------------------------------
+sqlldr user_name/password@servername:port/SID  
+DATA=/WDI_serious.csv
+CONTROL=/WDI_serious.ctl 
+LOG=/WDI_serious.log   
+BAD=/WDI_serious.bad &
+-----------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------
+sqlldr user_name/password@servername:port/SID  
+DATA=/WDI_serious_Year.csv
+CONTROL=/WDI_serious_Year.ctl 
+LOG=/WDI_serious_Year.log   
+BAD=/WDI_serious_Year.bad &
